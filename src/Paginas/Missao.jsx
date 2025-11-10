@@ -18,16 +18,16 @@ export function Missao() {
             <h2>Missões</h2>
         </header>
         <ul className="missoes-grid">
-            <li>
-                {missoes.map((m) => (
-                <MissaoCard
-                key={m.id}
-                missao={m}
-                onIniciarMissao={setMissaoSelecionada}
-                concluida={missoesConcluidas.includes(m.id)}
-                />
-                ))}
-            </li>
+            {missoes.map((m) => (
+                <li>
+                    <MissaoCard
+                    key={m.id}
+                    missao={m}
+                    onIniciarMissao={setMissaoSelecionada}
+                    concluida={missoesConcluidas.includes(m.id)}
+                    />
+                </li>
+            ))}
         </ul>
             
         {missaoSelecionada && (

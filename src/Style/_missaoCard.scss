@@ -42,6 +42,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
+  list-style: none;
 }
 
 /* CARD */
@@ -62,7 +63,7 @@
 }
 
 .missao-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-2px);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
 }
 
@@ -76,7 +77,16 @@
 }
 
 .missao-card button{
-  
+  border: none;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  background-color: $destaque-rosa;
+  color: #fff;
+}
+
+.missao-card button:hover {
+  background-color: darken($destaque-rosa, 10%);
+  cursor: pointer;
 }
 
 .missao-card .conteudo {
