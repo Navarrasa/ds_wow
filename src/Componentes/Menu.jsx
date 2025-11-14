@@ -1,4 +1,4 @@
-import missao from '../assets/missoes.png';
+    import missao from '../assets/missoes.png';
 import mapa from '../assets/mapa.png';
 import bau from '../assets/bau.png';
 import camera from '../assets/camera.png';
