@@ -59,7 +59,7 @@
   .grid {
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(110px, 2fr));
     justify-items: center;
     margin-top: 5px;
     flex-direction: row;

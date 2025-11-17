@@ -44,7 +44,7 @@ export const missoes = [
     titulo: "Python Básico",
     missao: "Qual comando é usado para exibir uma mensagem ou o valor de uma variável no console?", 
     descricao: "É uma das primeiras funções que se aprende na linguagem e é usada para depurar ou mostrar resultados.", 
-    respostaCorreta: "print()",
+    respostaCorreta: "print",
     status: 'disponivel' 
   },
   {
