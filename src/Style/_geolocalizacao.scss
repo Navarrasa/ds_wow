@@ -1,0 +1,122 @@
+@use './variaveis' as *;
+
+/* CONTAINER GERAL: Formulário à esquerda + Mapa à direita */
+.sessao-mapa {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 60px;
+}
+
+/* FORMULÁRIO LATERAL */
+.form-mapa {
+  width: 320px;
+  background: $box-fundo;
+  border-radius: 15px;
+  padding: 25px;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: $sombrasBox;
+  backdrop-filter: blur(12px);
+
+  color: $claro;
+}
+
+.form-mapa h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  color: $destaque-rosa;
+}
+
+/* FIELDSETS */
+fieldset {
+  border: 1px solid rgba(255,255,255,0.15);
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+legend {
+  font-size: 16px;
+  padding: 0 6px;
+  color: $destaque-rosa;
+}
+
+/* LABELS */
+label {
+  display: block;
+  margin: 8px 0 3px;
+  font-size: 14px;
+}
+
+/* INPUTS */
+.caixaTexto {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.1);
+  color: white;
+
+  transition: 0.2s;
+}
+
+.caixaTexto:focus {
+  outline: none;
+  border-color: $destaque-rosa;
+  background: rgba(255,255,255,0.2);
+}
+
+/* BOTÃO “Usar minha localização atual” */
+.btnLocal {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 8px;
+
+  background: $botao-amarelo;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.btnLocal:hover {
+  filter: brightness(1.15);
+}
+
+/* BOTÃO PRINCIPAL */
+.btnGerar {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 8px;
+
+  background: $botao-azul;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btnGerar:hover {
+  filter: brightness(1.2);
+}
+
+/* MAPA (à direita) */
+.mapa-container {
+  flex: 1;
+  height: 650px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: $sombrasBox;
+  background: #000;
+}
